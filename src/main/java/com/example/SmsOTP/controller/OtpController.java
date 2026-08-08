@@ -17,6 +17,8 @@ public class OtpController {
     private final OtpService otpService;
 
     // Send OT
+
+
     @PostMapping("/send")
     public ResponseEntity<ApiResponse> sendOtp(
             @Valid @RequestBody SendOtpRequest request) {
