@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
+
     // Invalid OTP Exception
     @ExceptionHandler(InvalidOtpException.class)
     public ResponseEntity<ApiResponse> handleInvalidOtpException(InvalidOtpException ex) {
