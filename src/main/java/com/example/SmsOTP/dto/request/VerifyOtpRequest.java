@@ -22,4 +22,5 @@ public class VerifyOtpRequest {
             message = "OTP must be exactly 6 digits"
     )
     private String otp;
+
 }
