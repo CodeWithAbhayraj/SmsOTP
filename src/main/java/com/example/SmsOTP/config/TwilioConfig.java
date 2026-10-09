@@ -23,6 +23,5 @@ public class TwilioConfig {
     public void init() {
         Twilio.init(accountSid, authToken);
         System.out.println("Twilio Initialized Successfully...");
-
     }
 }
