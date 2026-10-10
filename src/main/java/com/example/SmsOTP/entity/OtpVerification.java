@@ -37,4 +37,5 @@ public class OtpVerification {
     public void onCreate() {
         createdAt = LocalDateTime.now();
     }
+
 }
