@@ -15,4 +15,5 @@ public class SendOtpRequest {
             message = "Mobile number must be in E.164 format (Example: +919876543210)"
     )
     private String mobileNumber;
+
 }
