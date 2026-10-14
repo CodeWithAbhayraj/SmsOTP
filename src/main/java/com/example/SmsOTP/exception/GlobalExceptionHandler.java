@@ -21,12 +21,14 @@ public class GlobalExceptionHandler {
                 .data(null)
                 .build();
 
+
         return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
     }
 
     // Resource Not Found Exception
     @ExceptionHandler(ResourceNotFoundException.class)
     public ResponseEntity<ApiResponse> handleResourceNotFound(ResourceNotFoundException ex) {
+
 
         ApiResponse response = ApiResponse.builder()
                 .status(HttpStatus.NOT_FOUND.value())
@@ -63,6 +65,7 @@ public class GlobalExceptionHandler {
                 .message(ex.getMessage())
                 .data(null)
                 .build();
+
 
         return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
     }
