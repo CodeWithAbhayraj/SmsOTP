@@ -21,7 +21,6 @@ public class GlobalExceptionHandler {
                 .data(null)
                 .build();
 
-
         return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
     }
 
