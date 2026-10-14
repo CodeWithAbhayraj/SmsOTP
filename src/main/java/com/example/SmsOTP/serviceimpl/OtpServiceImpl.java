@@ -38,7 +38,6 @@ public class OtpServiceImpl implements OtpService {
 
         otpRepository.save(otpVerification);
 
-
         Message.creator(
                 new PhoneNumber(request.getMobileNumber()),
                 new PhoneNumber(twilioConfig.getPhoneNumber()),
